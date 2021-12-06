@@ -3,8 +3,8 @@ const sliderlineTs = document.querySelector('.slider-line') as HTMLElement;
 const nextButton = document.querySelector('.slider-next') as HTMLElement;
 const prevButton = document.querySelector('.slider-prev') as HTMLElement;
 
-nextButton.onclick = (e: MouseEvent) => {
-    e.preventDefault;
+nextButton.onclick = (e: MouseEvent | TouchEvent) => {
+    e.preventDefault();
     offsetTs = offsetTs + 256;
      if (offsetTs > 768) {
          offsetTs = 0;
@@ -13,8 +13,8 @@ nextButton.onclick = (e: MouseEvent) => {
 
 }
 
-prevButton.onclick = (e: MouseEvent) => {
-    e.preventDefault;
+prevButton.onclick = (e: MouseEvent | TouchEvent) => {
+    e.preventDefault();
     offsetTs = offsetTs - 256;
     if (offsetTs < 0) {
         offsetTs = 768;
