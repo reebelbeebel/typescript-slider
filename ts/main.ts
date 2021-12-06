@@ -1,4 +1,5 @@
 let offsetTs: number = 0;
+
 const sliderlineTs = document.querySelector('.slider-line') as HTMLElement;
 const nextButton = document.querySelector('.slider-next') as HTMLElement;
 const prevButton = document.querySelector('.slider-prev') as HTMLElement;
